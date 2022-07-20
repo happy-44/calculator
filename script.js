@@ -9,7 +9,7 @@ $(document).ready(function(){
         if(btn>="0" && btn<="9"|| btn=='.'){
             handleNumber(btn);
         }
-        else if(btn === 'Clear'){
+        else if(btn === 'C'){
             n1 = n2 = op='';
             ans=0;
             displayButton(ans);
@@ -59,7 +59,7 @@ function handleAns(){
             ans= +n1 / +n2;
             displayButton(ans);
             break;
-        case 'X':
+        case '*':
             ans= +n1 * +n2;
             displayButton(ans);
             break;
